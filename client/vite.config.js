@@ -20,7 +20,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://workout-buddy-backend-6l0x.onrender.com/',
         changeOrigin: true,
         secure: false,
       },
