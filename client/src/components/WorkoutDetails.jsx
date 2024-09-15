@@ -9,7 +9,7 @@ const WorkoutDetails = ({ workout }) => {
   const { user } = useAuthContext();
 
   const handleClick = async () => {
-    const response = await fetch(`/api/workouts/${workout._id}`, {
+    const response = await fetch(`https://workout-buddy-backend-6l0x.onrender.com/api/workouts/${workout._id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${user.token}` },
     });
