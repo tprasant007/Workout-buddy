@@ -12,7 +12,7 @@ const useSignup = () => {
 
     const response = await fetch("/api/user/signup", {
       method: "POST",
-      headers: { "Content-type": "application/json" },
+      headers: { "Content-type": "https://workout-buddy-backend-6l0x.onrender.com/application/json" },
       body: JSON.stringify({ email, password }),
     });
     const json = await response.json();
