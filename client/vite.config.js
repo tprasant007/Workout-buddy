@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://127.0.0.1:8000",
+        target: "https://workout-buddy-backend-6l0x.onrender.com/",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, "/api"),
       },
@@ -20,7 +20,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://workout-buddy-backend-6l0x.onrender.com/',
         changeOrigin: true,
         secure: false,
       },
